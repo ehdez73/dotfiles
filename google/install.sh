@@ -10,10 +10,10 @@ then
 fi
 
 # http://www.muylinux.com/2014/05/14/grive-tools-google-drive
-if test ! $(which grive)
-then
-  echo "  Installing Grive."
-  sudo add-apt-repository ppa:thefanclub/grive-tools
-  sudo apt-get update
-  sudo apt-get install grive-tools
-fi
+#if test ! $(which grive)
+#then
+#  echo "  Installing Grive."
+#  sudo add-apt-repository ppa:thefanclub/grive-tools
+#  sudo apt-get update
+#  sudo apt-get install grive-tools
+#fi
