@@ -8,3 +8,9 @@ then
   sudo dpkg -i google-chrome-stable_current_amd64.deb
   rm google-chrome-stable_current_amd64.deb
 fi
+
+if test ! $(which grive)
+then
+  echo "  Installing Grive."
+  sudo apt-get -y install grive
+ fi
