@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Spring - Spring Tool Suite 
+Icon=/home/ehdez/dotfiles/sts/spring_tool_suite.png
+Path=/opt/springsource/sts-bundle/sts-3.6.4.RELEASE
+Exec=env UBUNTU_MENUPROXY=0 GTK2_RC_FILES=/usr/share/themes/Clearlooks/gtk-2.0/gtkrc:/home/ehdez/dotfiles/sts/.gtkrc-sts '/opt/springsource/sts-bundle/sts-3.6.4.RELEASE/STS'
+StartupNotify=false
+StartupWMClass=Spring Tool Suite
+OnlyShowIn=Unity;
+X-UnityGenerated=true
