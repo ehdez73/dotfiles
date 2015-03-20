@@ -1,0 +1,13 @@
+style "eclipse" {
+    font_name = "Sans Condensed 8"
+}
+
+
+# Tooltip background color.
+style "eclipse-tooltips" {
+	bg[NORMAL] = "#e8e8e8"
+	fg[NORMAL] = "#000000"	
+}
+
+class "GtkWidget" style "eclipse"
+widget "gtk-tooltip*" style "eclipse-tooltips"
