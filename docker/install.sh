@@ -2,16 +2,16 @@
 if test ! $(which docker)
 then
 	echo -e "\e[33mInstalling Docker\e[39m"
-  	sudo apt-get -y install docker.io
-	sudo usermod -aG docker $USER
+	curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+  	sudo usermod -aG docker $USER
 fi
 
-if test ! $(which fig)
+if test ! $(which docker-compose)
 then
-	echo -e "\e[33mInstalling Fig\e[39m"
-	sudo pip install -U fig
+    # pip required
+    source ../python/install.sh
+    echo -e "\e[33mInstalling docker-compose\e[39m"
+	sudo pip install -U docker-compose
 fi
-
-sudo apt-get install dnsmasq
 
 
