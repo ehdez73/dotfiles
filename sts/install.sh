@@ -12,3 +12,11 @@ else
 	ln -s $(pwd)/sts.desktop ~/.local/share/applications/sts.desktop
 fi
 
+if test $(wich spring)
+then
+	echo "Found Spring CLI"
+else
+	echo "Installing Spring CLI"
+	curl https://start.spring.io/install.sh | sh
+fi
+
