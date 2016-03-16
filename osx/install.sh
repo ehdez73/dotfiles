@@ -2,17 +2,12 @@
 ARG=$1
 set -x
 
-case "$ARG" in
-  *base*)
-       cd base
-       brew bundle
-       ;;
-  *dev*)
-       cd development
-       brew bundle
-       pip install virtualenv virtualenvwrapper
-       ;;
-  *)
-     echo "usage $0 [base|dev]"
-     exit 1
-esac
+# install brew & cask
+if test ! $(which brew) 
+then
+  /user/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+brew bundle
+
+# virtualenv & virtualenvwrapper
+pip install virtualenv virtualenvwrapper
