@@ -15,6 +15,7 @@ brew 'sbt'
 brew 'nvm'
 
 cask 'atom'
+cask 'alfred'
 cask 'firefox'
 cask 'google-chrome'
 cask 'iterm2'
